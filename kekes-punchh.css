@@ -1,2 +1,223 @@
+/* =========================================================
+   Keke's Rewards – theme overrides
+   Paste this AFTER the default Punchh iframe CSS.
+   ======================================================= */
+
+:root {
+  --kekes-bg: #f4e1ba;         /* soft cream background */
+  --kekes-text: #1d130f;
+  --kekes-primary: #000000;    /* SIGN UP button */
+  --kekes-primary-hover: #262626;
+  --kekes-accent: #f08554;     /* LOG IN button (orange) */
+  --kekes-accent-hover: #d96f3f;
+  --kekes-card-bg: #ffffff;
+  --kekes-card-border: #1d130f;
+}
+
+/* 1. Full-screen background inside the iframe */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: var(--kekes-text);
+  font-family: "Your Site Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif !important;
+  background-color: var(--kekes-bg);
+  /* TODO: replace this with the final hero artwork used in the mockup */
+  /* background-image: url("https://example.com/path/to/kekes-rewards-bg.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* 2. Vertically & horizontally centre the content block */
+.disp-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.iframe-container {
+  width: 100%;
+}
+
+/* 3. Card shell for login / signup flows */
+
+.iframe-container .login-form,
+.iframe-container .signup-form {
+  width: 100%;
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 40px 32px 32px;
+  background-color: var(--kekes-card-bg);
+  border-radius: 24px;
+  border: 2px solid var(--kekes-card-border);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Title inside the card: "Keke's Rewards" */
+.iframe-container .login-form .header-div,
+.iframe-container .signup-form .header-div {
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* 4. Small brand text at the top: "Keke's Breakfast Café" */
+
+.iframe-header {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.iframe-header .header,
+.iframe-header h1,
+.iframe-header h2 {
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* 5. Sign Up / Log In buttons row */
+
+.navbar-div {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 8px;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 0; /* collapse whitespace between spans */
+}
+
+/* each span wraps a link */
+.navbar-div span {
+  display: inline-block;
+  width: 50%;
+  font-size: 12px;
+}
+
+/* kill the default circular OR pill */
+.navbar-div span + span:before {
+  display: none !important;
+}
+
+/* buttons themselves */
+.navbar-div span a.popup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 11px;
+  border: 0;
+}
+
+/* left button – SIGN UP */
+.navbar-div span:first-child a.popup {
+  background-color: var(--kekes-primary);
+  color: #ffffff;
+}
+
+/* right button – LOG IN */
+.navbar-div span:last-child a.popup {
+  background-color: var(--kekes-accent);
+  color: #ffffff;
+}
+
+/* hover states */
+.navbar-div span:first-child a.popup:hover {
+  background-color: var(--kekes-primary-hover);
+  color: #ffffff;
+}
+
+.navbar-div span:last-child a.popup:hover {
+  background-color: var(--kekes-accent-hover);
+  color: #ffffff;
+}
+
+/* centred "OR" text floating between the buttons */
+.navbar-div::after {
+  content: "OR";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--kekes-text);
+  pointer-events: none;
+}
+
+/* 6. Form fields inside the card */
+
+.iframe-container form {
+  width: 100%;
+  padding: 24px 0 8px;
+}
+
+.iframe-container form label {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 14px 0 4px;
+}
+
+.iframe-container form input,
+.iframe-container form textarea {
+  background-color: #f6f2ea;
+  border-radius: 8px;
+  border: 1px solid #d2c3a6;
+  font-size: 14px;
+  padding: 10px 12px;
+}
+
+/* primary submit buttons */
+.iframe-container form .btn-submit,
+.iframe-container form .submit-div input {
+  border-radius: 999px;
+  height: 44px;
+  line-height: 44px;
+  background-color: var(--kekes-primary);
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 11px;
+}
+
+.iframe-container form .btn-submit:hover,
+.iframe-container form .submit-div input:hover {
+  background-color: var(--kekes-primary-hover);
+}
+
+/* 7. Optional: hide Facebook / Google login area if not used */
+
+.facebook-login-div,
+.facebook-label {
+  display: none !important;
+}
+
+/* 8. Links (forgot password, info, etc.) */
+
+.forgot-div a,
+.info-div a {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 
 

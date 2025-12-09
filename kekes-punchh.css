@@ -222,3 +222,25 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+
+
+/* ==== Keke's custom background ======================= */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /* fallback colour roughly matching the artwork */
+  background-color: #f4e1ba;
+
+  /* your Wix-hosted background image */
+  background-image: url("https://static.wixstatic.com/media/2b4300_ec37299e4d7c40db89c073ca3c54c4c7~mv2.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* optional – nice if the iframe is taller than viewport */
+}
+

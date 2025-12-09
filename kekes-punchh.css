@@ -54,7 +54,7 @@ body {
   max-width: 420px;
   margin: 40px auto;
   padding: 40px 32px 32px;
-  background-color: var(--kekes-card-bg);
+  background-image: url("https://static.wixstatic.com/media/2b4300_ec37299e4d7c40db89c073ca3c54c4c7~mv2.png");
   border-radius: 24px;
   border: 2px solid var(--kekes-card-border);
   box-shadow: 0 22px 40px rgba(0, 0, 0, 0.18);

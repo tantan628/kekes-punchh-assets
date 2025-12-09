@@ -26,7 +26,7 @@ body {
     "Segoe UI", sans-serif !important;
   background-color: var(--kekes-bg);
   /* TODO: replace this with the final hero artwork used in the mockup */
-  /* background-image: url("https://example.com/path/to/kekes-rewards-bg.jpg"); */
+  /* background-image: url("https://example.com/path/to/kekes-rewards-bg.jpg");  test */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

@@ -24,12 +24,13 @@ body {
   color: var(--kekes-text);
   font-family: "Your Site Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif !important;
-  background-color: var(--kekes-bg);
-  /* TODO: replace this with the final hero artwork used in the mockup */
-  /* background-image: url("https://example.com/path/to/kekes-rewards-bg.jpg");  test */
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+
+  /* hero background image */
+  background-color: var(--kekes-bg) !important;
+  background-image: url("https://static.wixstatic.com/media/2b4300_ec37299e4d7c40db89c073ca3c54c4c7~mv2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
 }
 
 /* 2. Vertically & horizontally centre the content block */
@@ -219,5 +220,3 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-
-

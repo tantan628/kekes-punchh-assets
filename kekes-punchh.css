@@ -5,7 +5,6 @@
    Keke's Rewards – theme overrides
    Paste this AFTER the default Punchh iframe CSS.
    ======================================================= */
-
 :root {
   --kekes-bg: #f4e1ba;         /* soft cream background */
   --kekes-text: #1d130f;
@@ -18,22 +17,22 @@
 }
 
 /* 1. Full-screen background inside the iframe */
-html,
-body {
+html, body {
   height: 100%;
 }
 
 body {
   color: var(--kekes-text);
-  font-family: "Your Site Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif !important;
-
+  font-family: "Your Site Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   /* hero background image */
   background-color: var(--kekes-bg) !important;
   background-image: url("https://static.wixstatic.com/media/2b4300_ec37299e4d7c40db89c073ca3c54c4c7~mv2.png") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
+  position: relative;
+  height: 100vh;
+  overflow: show;
 }
 
 /* 2. Vertically & horizontally centre the content block */
@@ -42,6 +41,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100vh;
   min-height: 100%;
 }
 
@@ -50,7 +50,6 @@ body {
 }
 
 /* 3. Card shell for login / signup flows */
-
 .iframe-container .login-form,
 .iframe-container .signup-form {
   width: 100%;
@@ -74,41 +73,47 @@ body {
 }
 
 /* 4. Small brand text at the top: "Keke's Breakfast Café" */
-
 .iframe-header {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 100%;
   text-align: center;
-  padding-top: 24px;
+  z-index: 10;
 }
 
-.iframe-header .header,
-.iframe-header h1,
-.iframe-header h2 {
-  font-size: 12px;
+.header {
+  font-size: 14px;
+  font-weight: 500;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  font-weight: 500;
+  color: var(--kekes-text);
+  margin: 0;
+  padding: 0;
 }
 
 /* 5. Sign Up / Log In buttons row */
-
 .navbar-div {
-  width: 100%;
-  max-width: 360px;
-  margin: 0 auto 8px;
-  padding: 0;
+  width: 50%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   font-size: 0; /* collapse whitespace between spans */
+  margin: 35vh auto;
+  padding: 150px 32px 32px;
+  background-color: var(--kekes-card-bg);
+  border-radius: 24px;
+  border: 2px solid var(--kekes-card-border);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.18);
 }
 
 /* each span wraps a link */
 .navbar-div span {
   display: inline-block;
   width: 50%;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 /* kill the default circular OR pill */
@@ -121,12 +126,14 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 50%;
+  min-width: 110px;
   height: 44px;
-  border-radius: 999px;
+  border-radius: 0px;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+  font-weight: bold;
   border: 0;
 }
 
@@ -153,22 +160,37 @@ body {
   color: #ffffff;
 }
 
+.navbar-div::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 180px; /* or whatever size you want */
+  height: 100px;
+  margin: 0 auto 16px auto;
+  background-image: url("https://static.wixstatic.com/media/2b4300_35e01556b349451ba0dfe556de08b50d~mv2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* centred "OR" text floating between the buttons */
 .navbar-div::after {
   content: "OR";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 11px;
-  letter-spacing: 0.16em;
+  transform: translate(-50%, 170%);
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--kekes-text);
   pointer-events: none;
 }
 
 /* 6. Form fields inside the card */
-
 .iframe-container form {
   width: 100%;
   padding: 24px 0 8px;
@@ -209,14 +231,12 @@ body {
 }
 
 /* 7. Optional: hide Facebook / Google login area if not used */
-
 .facebook-login-div,
 .facebook-label {
   display: none !important;
 }
 
 /* 8. Links (forgot password, info, etc.) */
-
 .forgot-div a,
 .info-div a {
   font-size: 11px;

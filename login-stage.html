@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keke's Login Form (Stage 2)</title>
+  <link rel="stylesheet" href="kekes-punchh.css" />
+</head>
+<body>
+  <div class="iframe-container">
+    <div class="login-form" id="IframeLoginSection">
+      <form class="new_user" id="user-form" method="post" action="/customers/sign_in.iframe?slug=kekesbreakfastcafe" data-ajax="false" accept-charset="UTF-8">
+        <input type="hidden" name="utf8" value="✓" />
+        <input type="hidden" name="authenticity_token" value="PLACEHOLDER_TOKEN" autocomplete="off" />
+        
+        <div class="login-div">
+          <label for="user_email">Email (required)</label>
+          <input type="email" value="" name="user[email]" id="user_email" />
+          
+          <label for="user_password">Password (required)</label>
+          <input required="required" type="password" name="user[password]" id="user_password" />
+        </div>
+
+        <div class="submit-div">
+          <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?compat=recaptcha" async defer></script>
+          <div class="g-recaptcha" data-sitekey="0x4AAAAAAA...PLACEHOLDER_SITEKEY..." data-formselector="form #invisible-recaptcha" data-submit_element="user-form" data-size="normal"></div>
+          <input type="submit" name="commit" value="Login" id="invisible-recaptcha" data-disable-with="Login" />
+        </div>
+      </form>
+
+      <div class="forgot-div">
+        <a href="/customers/password/new.iframe?slug=kekesbreakfastcafe">Forgot Password?</a>
+      </div>
+
+      <span id="requestHostName" class="d-none">iframe.us-west.punchh.com</span>
+    </div>
+  </div>
+</body>
+</html>

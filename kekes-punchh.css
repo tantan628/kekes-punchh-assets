@@ -2,6 +2,7 @@
 .iframe-container .checkbox_marketing_email_subscription{height:20px;padding:5px;margin:10px 0 0 0;width:20px;float:left;}.iframe-container .label_marketing_email_subscription{padding:10px 0px 10px 30px;margin:0;font-weight:400;font-size:12px;}.iframe-container .iframe-age-verified-section,.iframe-container .iframe-privacy-policy-section,.iframe-container .iframe-terms-and-conditions,.iframe-container #compliance{display:flex;gap:10px;padding:10px 0;font-size:12px;font-weight:400;}.iframe-container .iframe-age-verified-section input[type="checkbox"],.iframe-container .iframe-privacy-policy-section input[type="checkbox"],.iframe-container .iframe-terms-and-conditions input[type="checkbox"],.iframe-container #compliance input[type="checkbox"]{height:20px;padding:5px;margin:0;width:20px;flex:none;}.iframe-container .iframe-age-verified-section label,.iframe-container .iframe-privacy-policy-section label,.iframe-container .iframe-terms-and-conditions label,.iframe-container #compliance label{padding:0;margin:0;font-weight:400;font-size:12px;}.iframe-container .iframe-age-verified-section a,.iframe-container .iframe-privacy-policy-section a,.iframe-container .iframe-terms-and-conditions a,.iframe-container #compliance a{padding:0;margin:0;text-align:left;font-weight:400;font-size:12px;color:inherit;text-decoration:underline!important;float:none;text-transform:uppercase;}.iframe-container .iframe-terms-and-conditions a{display:inline;}
 
 
+
 /* =========================================================
    Keke's Rewards – theme overrides
    Paste this AFTER the default Punchh iframe CSS.
@@ -81,6 +82,13 @@ body {
   .navbar-div:not(:has(span)) {
     display: none !important;
   }
+}
+
+.alert-message {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  position: relative;
 }
 
 /* ===============================
@@ -208,7 +216,13 @@ body.user-dahboard .iframe-header {
 }
 
 body.user-dahboard .iframe-container {
-  width: 30%;
+  width: 35%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
 }
 
 body.user-dahboard .navbar-div {
@@ -281,8 +295,10 @@ body.user-dahboard #redemption-rewards {
 }
 
 body.user-dahboard .signup-form {
-  margin-top: 0;
+  margin: 0;
   padding: 20px 10px 20px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 /* Forms */
@@ -347,3 +363,4 @@ body.user-dahboard .signup-form {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keke's Dashboard Test</title>
+  <link rel="stylesheet" href="kekes-punchh.css" />
+</head>
+<body class="user-dahboard">
+  <div class="iframe-header">
+    <div class="header"><h1>Keke's Breakfast Cafe</h1></div>
+    <div class="navbar-div">
+      <span class="account-link"><a href="#">Account Balance</a></span>
+      <span class="checkin-link"><a href="#">Checkin</a></span>
+      <span id="redemption-rewards" class="redemption-link"><a href="#">Redeem Rewards</a></span>
+      <span id="redemption-offers" class="redemption-link"><a href="#">Offers</a></span>
+      <span class="setting-link"><a href="#">Edit Profile</a></span>
+      <span class="signout-link"><a href="#">Sign Out</a></span>
+    </div>
+  </div>
+
+  <div class="iframe-container">
+    <div class="signup-form">
+      <form id="user-form" method="post">
+        <label for="user_email">Email</label>
+        <input type="email" value="holttanis@gmail.com" id="user_email" />
+
+        <label for="user_phone">Phone Number</label>
+        <input type="text" value="0123456789" id="user_phone" />
+
+        <label for="user_first_name">First Name</label>
+        <input type="text" value="Tanis" id="user_first_name" />
+
+        <label for="user_last_name">Last Name</label>
+        <input type="text" value="Holt" id="user_last_name" />
+
+        <label for="user_current_password">Current Password</label>
+        <input type="password" id="user_current_password" />
+
+        <label for="user_password">New Password</label>
+        <input type="password" id="user_password" />
+
+        <label for="user_password_confirmation">Confirm Password</label>
+        <input type="password" id="user_password_confirmation" />
+
+        <label for="user_zip_code">Zip Code</label>
+        <input type="text" value="90210" id="user_zip_code" />
+
+        <label for="user_fav_location_id">Favorite Location</label>
+        <select id="user_fav_location_id">
+          <option selected>Citrus Park</option>
+        </select>
+
+        <div class="form-group checkbox">
+          <label>
+            <input type="checkbox" id="user_marketing_email_subscription" />
+            I would like to subscribe to marketing emails
+          </label>
+        </div>
+
+        <div class="form-group checkbox">
+          <label>
+            <input type="checkbox" checked id="user_terms_and_conditions" required />
+            I agree to the <a href="#">Terms and Conditions</a>
+          </label>
+        </div>
+
+        <div class="form-group checkbox">
+          <label>
+            <input type="checkbox" id="user_send_compliance_sms" />
+            Agree to receive SMS marketing
+          </label>
+        </div>
+
+        <div class="submit-div float-start">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

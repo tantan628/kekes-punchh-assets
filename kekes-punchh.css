@@ -59,6 +59,11 @@ body {
   width: 100%;
   text-align: center;
   z-index: 10;
+  order: 2;
+}
+
+.signup-form {
+  order: 1;
 }
 
 .header {

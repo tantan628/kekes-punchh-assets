@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Keke’s Rewards – Signup (Test)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="kekes-punchh.css" />
+</head>
+
+<body>
+
+  <div class="iframe-header">
+    <div class="header">
+      <h1>Keke's Breakfast Cafe</h1>
+    </div>
+    <div class="navbar-div"></div>
+  </div>
+
+  <div class="iframe-container">
+    <div class="signup-form" data-sessionslug="true">
+
+      <div class="alert-message-error"></div>
+      <div class="error-messages"></div>
+
+      <form data-ajax="false" id="user-form" action="#" method="post">
+
+        <div class="email-error d-none">
+          The email address you entered is not valid.
+        </div>
+
+        <div class="signup-div">
+
+          <label for="user_email">Email (required)</label>
+          <input type="email" name="user[email]" id="user_email" />
+
+          <span class="email-hint form-hint"></span>
+
+          <label for="user_phone">Phone Number (required)</label>
+          <input type="text" name="user[phone]" id="user_phone" required />
+
+          <span class="phone-hint form-hint">
+            You’ll use your phone number to easily check in &amp; earn rewards!
+          </span>
+
+          <label for="user_first_name">First Name (required)</label>
+          <input type="text" name="user[first_name]" id="user_first_name" />
+
+          <label for="user_last_name">Last Name (required)</label>
+          <input type="text" name="user[last_name]" id="user_last_name" />
+
+          <div class="password-div">
+            <label for="user_password">Password (required)</label>
+            <input type="password" name="user[password]" id="user_password" />
+
+            <span class="signup-password-hint form-hint">
+              Password should be at least 6 characters long.
+            </span>
+
+            <label for="user_password_confirmation">Confirm Password (required)</label>
+            <input type="password" name="user[password_confirmation]" id="user_password_confirmation" />
+          </div>
+
+          <div class="birthday">
+            <label>Share your birthday for a special treat!</label>
+
+            <select name="user[birthday_day]">
+              <option value=""></option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6</option>
+              <option>7</option><option>8</option><option>9</option>
+              <option>10</option><option>11</option><option>12</option>
+              <option>13</option><option>14</option><option>15</option>
+              <option>16</option><option>17</option><option>18</option>
+              <option>19</option><option>20</option><option>21</option>
+              <option>22</option><option>23</option><option>24</option>
+              <option>25</option><option>26</option><option>27</option>
+              <option>28</option><option>29</option><option>30</option>
+              <option>31</option>
+            </select>
+
+            <select name="user[birthday_month]">
+              <option value=""></option>
+              <option>January</option><option>February</option><option>March</option>
+              <option>April</option><option>May</option><option>June</option>
+              <option>July</option><option>August</option><option>September</option>
+              <option>October</option><option>November</option><option>December</option>
+            </select>
+
+            <select name="user[birthday_year]">
+              <option value=""></option>
+              <option>1995</option><option>1994</option><option>1993</option>
+              <option>1992</option><option>1991</option><option>1990</option>
+            </select>
+          </div>
+
+          <label for="user_zip_code">Zip Code (U.S. residents only)</label>
+          <input type="text" name="user[zip_code]" id="user_zip_code" />
+
+          <label for="user_fav_location_id">Favorite Location (required)</label>
+          <select name="user[fav_location_id]" id="user_fav_location_id">
+            <option value="">Please select</option>
+            <option>Citrus Park</option>
+            <option>Apopka</option>
+            <option>Boca Raton</option>
+          </select>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="user_marketing_email_subscription" />
+            <label for="user_marketing_email_subscription">
+              I would like to subscribe to marketing emails
+            </label>
+          </div>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="user_terms_and_conditions" checked />
+            <label for="user_terms_and_conditions">
+              I agree to the Keke's Breakfast Cafe
+              <a href="#">Terms and Conditions</a>
+            </label>
+          </div>
+
+        </div>
+
+        <div class="submit-div">
+          <input type="submit" value="Submit" />
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="info-container"></div>
+
+</body>
+</html>

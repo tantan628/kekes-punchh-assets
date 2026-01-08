@@ -53,12 +53,13 @@ body {
 
 /* Header */
 .iframe-header {
-  position: fixed;
-  top: 24px;
+  position: relative !important;
+  top: auot !important;
+  margin-top: 24px;
   left: 0;
   width: 100%;
   text-align: center;
-  z-index: 10;
+  z-index: 1;
   order: 2;
 }
 

@@ -108,7 +108,7 @@ body {
   width: 100%;
   max-width: 420px;
   margin: 0 auto;
-  margin-top: 20vh;
+  margin-top: 20px;
   padding: 80px 32px 56px;
   background-color: var(--kekes-card-bg);
   border-radius: 24px;
@@ -120,6 +120,20 @@ body {
   content: "";
   position: absolute;
   top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 180px;
+  height: 100px;
+  background-image: url("https://static.wixstatic.com/media/2b4300_35e01556b349451ba0dfe556de08b50d~mv2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.iframe-container .signup-form::before {
+  content: "";
+  position: absolute;
+  top: 10%;
   left: 50%;
   transform: translate(-50%);
   width: 180px;
@@ -216,6 +230,37 @@ body {
   color: var(--kekes-text);
   pointer-events: none;
 }
+
+
+/* ============================
+   Birthday (DOB) layout fix
+   ============================ */
+
+.iframe-container .birthday {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.iframe-container .birthday label {
+  grid-column: 1 / -1;
+}
+
+.iframe-container .birthday select {
+  width: 100%;
+  min-width: 0;
+}
+
+.iframe-container .birthday select {
+  background-color: #f6f2ea;
+  border-radius: 8px;
+  border: 1px solid #d2c3a6;
+  font-size: 14px;
+  padding: 10px 12px;
+}
+
+
 
 /* ============================
    Step 1 + 2: Logged-in layout
@@ -373,3 +418,37 @@ body.user-dahboard .signup-form {
   text-transform: uppercase;
 }
 
+
+
+
+
+.birthday {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Month - put this first */
+.birthday select#user_birthday_2i {
+  order: 1;
+}
+
+/* Day - second */
+.birthday select#user_birthday_3i {
+  order: 2;
+}
+
+/* Year - last */
+.birthday select#user_birthday_1i {
+  order: 3;
+}
+
+
+
+/* Checkbox Label Styling */
+.iframe-container form input[type="checkbox"] + label {
+  text-transform: none !important;
+  font-size: 13px !important;
+  line-height: 1.4;
+}

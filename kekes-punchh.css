@@ -449,4 +449,7 @@ body.user-dahboard .signup-form {
   text-transform: none !important;
   font-size: 13px !important;
   line-height: 1.4;
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-top: 1px;
 }

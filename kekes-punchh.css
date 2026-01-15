@@ -93,11 +93,9 @@ body {
   }
 }
 
-.alert-message {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  position: relative;
+.alert-message,
+.alert-message-error {
+  display: none !important;
 }
 
 /* ===============================

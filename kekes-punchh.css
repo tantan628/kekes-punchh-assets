@@ -453,3 +453,8 @@ body.user-dahboard .signup-form {
   margin-bottom: 15px;
   margin-top: 1px;
 }
+
+.iframe-container #all-location {
+  display: none !important;
+}
+

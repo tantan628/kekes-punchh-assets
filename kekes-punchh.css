@@ -475,3 +475,24 @@ body.user-dahboard .barcode-div {
    padding: 10px 0px 0px 0px;
 }
 
+.current-password-hint {
+   font-size: 12px;
+   font-weight: 300;
+   letter-spacing: 1px;
+   line-height: 12px;
+   padding: 4px 0 10px;
+   text-align: left;
+   width: 100%;
+   display: block;
+}
+
+.password-hint {
+   font-size: 12px;
+   font-weight: 300;
+   letter-spacing: 1px;
+   line-height: 12px;
+   padding: 4px 0 10px;
+   text-align: left;
+   width: 100%;
+   display: block;
+}

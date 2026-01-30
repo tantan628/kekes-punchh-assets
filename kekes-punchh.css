@@ -456,13 +456,17 @@ body.user-dahboard .signup-form {
 .iframe-container form input[type="checkbox"] + label {
   text-transform: none !important;
   font-size: 13px !important;
-  line-height: 1.4;
+  line-height: 1.2;
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-top: 1px;
 }
 
 .iframe-container #all-location {
   display: none !important;
+}
+
+.iframe-container .label_marketing_email_subscription {
+   padding: 10px 0px 0px 0px;
 }
 

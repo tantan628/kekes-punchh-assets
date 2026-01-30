@@ -71,7 +71,7 @@ body {
   order: 2;
 }
 
-.signup-form {
+.signup- {
   order: 1;
 }
 
@@ -340,6 +340,7 @@ body.user-dahboard .navbar-div span a {
 
 body.user-dahboard .navbar-div span.signout-link a {
   background-color: var(--kekes-accent);
+  border-radius: 10px 10px 10px 10px;
 }
 
 body.user-dahboard .navbar-div span.signout-link a:hover {

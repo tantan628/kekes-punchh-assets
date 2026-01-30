@@ -339,7 +339,7 @@ body.user-dahboard .navbar-div span a {
 }
 
 body.user-dahboard .navbar-div span.signout-link a {
-  background-color: var(--kekes-accent);
+  background-color: var(--kekes-accent) !important;
   border-radius: 10px 10px 10px 10px;
 }
 

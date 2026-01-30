@@ -364,7 +364,6 @@ body.user-dahboard .signup-form {
 /* Forms */
 .iframe-container form {
   width: 100%;
-  padding: 24px 0 8px;
 }
 
 .iframe-container form label {
@@ -399,7 +398,6 @@ body.user-dahboard .signup-form {
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 16px;
-  margin-bottom: 12px;
   transition: background-color 0.2s ease;
 }
 

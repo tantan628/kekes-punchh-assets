@@ -496,3 +496,11 @@ body.user-dahboard .barcode-div {
    width: 100%;
    display: block;
 }
+
+body.user-dahboard #user_email {
+   pointer-events: none;
+}
+
+body.user-dahboard #user_phone {
+   pointer-events: none;
+}

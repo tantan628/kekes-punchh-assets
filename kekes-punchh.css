@@ -508,3 +508,7 @@ body.user-dahboard #user_phone {
 body.user-dahboard .submit-div.float-start {
    float: none !important;
 }
+
+.info-container {
+  padding: 20px;
+}

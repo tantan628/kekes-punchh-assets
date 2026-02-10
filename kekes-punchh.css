@@ -503,3 +503,7 @@ body.user-dahboard #user_email {
 body.user-dahboard #user_phone {
    pointer-events: none;
 }
+
+body.user-dahboard .submit-div.float-start {
+   float: none !important;
+}

@@ -516,3 +516,13 @@ body.user-dahboard .submit-div.float-start {
   padding: 20px;
   text-align: center;
 }
+
+.password-form {
+   background: white;
+   max-width: 400px;
+   padding: 20px
+   border-radius: 10px;
+   margin: 40px auto;
+}
+
+

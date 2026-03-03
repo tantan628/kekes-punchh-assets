@@ -283,7 +283,7 @@ body.user-dahboard .iframe-container {
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 
 body.user-dahboard .navbar-div {

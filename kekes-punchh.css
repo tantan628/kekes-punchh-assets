@@ -284,6 +284,7 @@ body.user-dahboard .iframe-container {
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
+  min-wdth: 400px;
 }
 
 body.user-dahboard .navbar-div {
@@ -565,5 +566,17 @@ input.btn.btn-primary.btn-lg.add-some-margin {
   font-weight: bold;
   cursor: pointer;
   font-family: "Chesna Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+.offers-form {
+  width: 95%;
+}
+
+.redeemable-div {
+  width: 100%;
+}
+
+select#redemption_reward_id {
+  width: 100%;
 }
 
